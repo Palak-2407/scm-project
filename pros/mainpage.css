@@ -1,0 +1,293 @@
+
+
+.main 
+{
+    background-image: url(https://www.teahub.io/photos/full/16-168437_wallpaper-books-library-shelves-lighting-library-background-wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: brightness(100%);
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    /* justify-content: center;
+    align-items: center;  */
+}
+
+
+.welcome
+{   margin-top: 200px;
+    background-color: rgba(4, 12, 11, 0.6);
+    clip-path: polygon(100% 10%, 100% 100%, 0% 90%, 0% 0%);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center; 
+    align-items: center; 
+    background-color: rgba(4, 12, 11, 0.6);
+    clip-path: polygon(100% 20%, 100% 100%, 0% 80%, 0% 0%);
+    padding: 75px 0;
+}
+
+.wel
+{
+    font-size: 65px;
+    background: -webkit-linear-gradient(#eee, rgb(75, 0, 250));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline;
+}
+
+.welcome-notes
+{
+    font-size: 56px;
+    font-weight: bold;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    justify-content: space-between;
+}
+.nav-bar
+  {
+    background-color: none;
+    font-weight: 500;
+    padding: 0px 40px;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    z-index: 11;
+    width: 100%;
+    height: var(--nav-height);
+    backdrop-filter: blur(10px);
+    transition: var(--transition);
+    filter: none !important;
+    pointer-events: auto !important;
+    user-select: auto !important;
+  }
+  
+.nav_bar {
+    display: flex;
+    /* animation-name: top;
+    animation-duration: 12px;
+    animation-delay: 10s; */
+    justify-content: space-between;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    /* margin: 0px; */
+    /* border-bottom: 1px solid black; */
+    /* border-bottom: 1px solid rgba(0,0,0,.2); */
+    /* box-shadow: 0 2px 4px 0 rgba(0,0,0,.2); */
+    font-weight: bold;
+}
+
+.start {
+    display: flex;
+    /* background-color: violet; */
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 15px;
+    gap: 20px;
+    font-weight: bold;
+}
+
+img {
+    width: 100px;
+    height: 39px;
+}
+
+.elements{
+    display: flex;
+    /* background-color: yellow; */
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 15px;
+    gap: 20px;
+    font-weight: bold;
+}
+
+.login_ele {
+    padding: 10px;
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+.server_ele {
+    padding: 10px;
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+.signup_ele {
+    padding: 10px;
+    font-weight: bold;
+}
+
+.signup_ele:hover {
+    background-color: black;
+    /* border: solid black; */
+    color: white;
+}
+
+.signup_ele_link:hover {
+    color: white;
+}
+
+.violet_ele:hover {
+    color: #A435F0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* .search {
+   border-width: 5px;
+   border-color: black;
+}  */
+
+input {
+    border-radius: 25px;
+    height: 45px;
+    width: 660px;
+    background-color: none;
+}
+.quiz
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image :linear-gradient(      
+    45deg,#efefef 25%,rgba(239,239,239,0) 25%,rgba(239,239,239,0) 75%,#efefef 75%,#efefef),linear-gradient(
+    45deg,#efefef 25%,rgba(239,239,239,0) 25%,rgba(239,239,239,0) 75%,#efefef 75%,#efefef);
+    color: rgb(0, 0, 0);
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+.inside
+{
+    --gutterWidth: 32px;
+    max-width: 1140px;
+    padding-left: var(--gutterWidth);
+    padding-right: var(--gutterWidth);
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.inside-box
+{
+    font-size: var(--t2);
+    display: grid;
+    -webkit-box-pack: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 0px auto;
+}
+.quiz-body
+{
+    font-size: 56px;
+    max-width: 456px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 32px;
+}
+.quiz-box
+{
+    font-size: 40px;
+    padding: 8px 16px;
+    display: inline;
+    width: 130px;
+    margin-top: 40px;
+    background-color: #A435F0;
+    color: white;
+    border-radius: 25px;
+}
+.quiz-box :hover{
+    background-color: #ffffff;
+    display: inline;
+    width: 130px;
+    border-color: #A435F0;
+    padding: 8px 16px;
+    color: #A435F0;
+    
+    border-radius: 25px;
+}
+.quiz-pic
+{
+    display: block;
+}
+.quiz-1
+{
+    width: 430px;
+    height: 700px;
+}
+.lecture{
+    background-image: url(https://images.unsplash.com/photo-1508873699372-7aeab60b44ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NHw0NDgwMjEyfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: brightness(100%);
+    background-size: cover;
+    overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;  
+}
+.lecture-body
+{
+    font-size: 56px;
+    max-width: 456px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 32px;
+}
+.lecture-box
+{
+    font-size: 40px;
+    padding: 8px 16px;
+    display: inline;
+    width: 130px;
+    margin-top: 40px;
+    background-color: #A435F0;
+    color: white;
+    border-radius: 25px;
+}
+.lecture-box :hover{
+    background-color: #ffffff;
+    display: inline;
+    width: 130px;
+    border-color: #A435F0;
+    padding: 8px 16px;
+    color: #A435F0;
+    
+    border-radius: 25px;
+}
+.lecture-pic
+{
+    display: block;
+}
+.lecture-1
+{
+    width: 526px;
+    height: 739px;
+}
+.lib-pic
+{
+    display: block;
+}
+.lib-1
+{
+    padding: 2px 16px;
+    width: 730px;
+    height: 500px;
+} 
+}
