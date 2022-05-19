@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url("Images/signin_img.jpeg");
+            background-size: 100% 120%;
+           
+        }
+        .main{
+            background-color:  rgba(0, 0, 0, 0.5);;
+            margin: auto;
+            margin-top: 6%;
+            color: white;
+            width: 400px;
+            border: 2px black solid; 
+            padding: 50px;
+            border-radius: 10px;
+        }
+        fieldset{
+            margin: 0;
+            padding: 0;
+            border: rgb(14, 161, 219) 3px solid;
+            color: rgb(0, 195, 255);
+            
+        }
+        input[type="password"]{
+            
+            padding-left: 10px;
+            border: none;
+            background-color:transparent ;
+            width: 90%;
+            height: 35px;
+            outline: none;
+            color: white;
+        }
+        a{
+            text-decoration:none;
+            color: rgb(14, 161, 219);
+        }
+        .button{
+            background-color: rgb(14, 161, 219);
+            margin-left: 300px;
+            width: 100px;
+        }
+        a{
+            float: left;
+            display: inline;
+        }
+    </style>
+    <script>
+        function login(){
+            var pwd = document.getElementById("pwd1").value;
+            if(pwd==""){
+                alert("Please enter password.")
+            }
+            else if (pwd.length<6){
+                alert("Password min. length is 6.")
+            }
+            else{
+                alert("Thank You for Login & You are Redirecting to PROS Website!!")
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="main">
+        <center>
+            <h1>PROS</h1>
+            <h1>Password</h1>
+            <p>Sign in with Pros Account to get your <br>bookmark history,passwords and other settings <br>on all your devices</p>
+            <fieldset>
+                <legend class="hi">Password</legend>
+                <input type="password" id="pwd1" >
+            </fieldset>
+        </center> <br>
+        <a href="">Forgot password?</a>
+        <br><br>
+        <p>Not your computer? Use Guest mode to sign in privately</p>
+        <a href="">Learn more</a>
+        <br><br><br>
+        <button class="button" onclick="login()">Submit</button> 
+    </div>
+</body>
+</html>
